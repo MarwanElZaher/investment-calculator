@@ -1,9 +1,9 @@
-const UserInputField = ({ label }) => {
+const UserInputField = ({ label, onValueChange }) => {
   return (
     <>
       <label>{label} </label>
 
-      <input></input>
+      <input onChange={() => onValueChange(event, label)} type="number"></input>
     </>
   );
 };
