@@ -1,6 +1,6 @@
 import { useState } from "react";
 import UserInputField from "./UserInputField"
-
+import logo from '../assets/investment-calculator-logo.png'
 const Header = () => {
   const [value, setValue] = useState(null);
   const handleInputValue = (event, label) => {
@@ -16,8 +16,8 @@ const Header = () => {
     <>
       <div id="header">
         <img
-          src="investment-calculator-logo.png"
-          alt="investment-calculator-logo"
+          src={logo}
+          alt="money-bag-logo"
         />
         <h1>Investment Calculator</h1>
       </div>
